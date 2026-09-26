@@ -2,26 +2,18 @@
   "format_version": "1.8.0",
   "render_controllers": {
     "controller.render.bb.first_person": {
-      "geometry": "Geometry.first_person",
-      "materials": [
-        {
-          "*": "Material.default"
-        }
-      ],
-      "textures": [
-        "Texture.default"
+      "geometry": "Geometry.combat",
+      "materials": [{ "*": "Material.default" }],
+      "textures": ["Texture.default"],
+      "part_visibility": [
+        { "head": false },
+        { "hat": false }
       ]
     },
     "controller.render.bb.third_person": {
       "geometry": "Geometry.combat",
-      "materials": [
-        {
-          "*": "Material.default"
-        }
-      ],
-      "textures": [
-        "Texture.default"
-      ]
+      "materials": [{ "*": "Material.default" }],
+      "textures": ["Texture.default"]
     }
   }
 }

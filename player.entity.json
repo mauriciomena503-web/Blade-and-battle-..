@@ -3,27 +3,17 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "minecraft:player",
-      "materials": {
-        "default": "entity_alphatest"
-      },
-      "textures": {
-        "default": "textures/entity/steve"
-      },
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/steve" },
       "geometry": {
         "default": "geometry.better_player",
         "combat": "geometry.better_player",
         "first_person": "geometry.bb_first_person"
       },
       "scripts": {
-        "initialize": [
-          "variable.is_first_person = 0.0;"
-        ],
-        "pre_animation": [
-          "variable.is_first_person = query.is_first_person;"
-        ],
-        "animate": [
-          "bb_locomotion"
-        ]
+        "initialize": [ "variable.is_first_person = 0.0;" ],
+        "pre_animation": [ "variable.is_first_person = query.is_first_person;" ],
+        "animate": [ "bb_locomotion" ]
       },
       "animations": {
         "bb_locomotion": "controller.animation.bb.locomotion",
@@ -33,12 +23,8 @@
         "bb_block": "animation.bb.combat.block"
       },
       "render_controllers": [
-        {
-          "controller.render.bb.first_person": "variable.is_first_person"
-        },
-        {
-          "controller.render.bb.third_person": "!variable.is_first_person"
-        }
+        { "controller.render.bb.first_person": "query.is_first_person" },
+        { "controller.render.bb.third_person": "!query.is_first_person" }
       ]
     }
   }

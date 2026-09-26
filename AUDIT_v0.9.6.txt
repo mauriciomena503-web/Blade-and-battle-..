@@ -1,0 +1,10 @@
+Blade & Battle v0.9.6 — targeted patch
+Source: mauriciomena503-web/Blade-and-battle-..
+Changes:
+1. First-person render controller now uses query.is_first_person directly.
+2. First-person uses the custom combat geometry and explicitly hides head/hat.
+3. Sword animation now targets the actual bound "sword" bone instead of nonexistent rightItem.
+4. Removed the global sword root offset/rotation that caused the weapon to appear far from the hand.
+5. Directional Dodge now uses Player.inputInfo.getMovementVector(), supporting forward/back/left/right.
+6. Added transient floating numeric damage popups; no health bars are added.
+7. Existing third-person combat animation architecture is preserved.

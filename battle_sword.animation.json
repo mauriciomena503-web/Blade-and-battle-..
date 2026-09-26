@@ -5,41 +5,19 @@
       "loop": true,
       "override_previous_animation": true,
       "bones": {
-        "root": {
-          "rotation": [
-            0,
-            180,
-            0
-          ],
-          "position": [
-            2,
-            -3,
-            12
-          ]
-        },
-        "rightArm": {
-          "rotation": [
-            -90,
-            10,
-            0
-          ]
+        "sword": {
+          "rotation": [0, 0, 0],
+          "position": [0, 0, 0]
         }
       }
     },
     "animation.bb.sword.third_person": {
       "loop": true,
+      "override_previous_animation": true,
       "bones": {
-        "rightItem": {
-          "rotation": [
-            0,
-            0,
-            0
-          ],
-          "position": [
-            0,
-            0,
-            0
-          ]
+        "sword": {
+          "rotation": [0, 0, 0],
+          "position": [0, 0, 0]
         }
       }
     }
