@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Blade & Battle v0.9.5 \u2014 First Person + Sword Texture Fix",
+    "description": "Anticipacion + torso + piernas. Sin override de player. Skin intacta.",
+    "uuid": "a0750004-a7b8-4c9d-0e1f-2a3b4c5d6e7f",
+    "version": [
+      0,
+      9,
+      5
+    ],
+    "min_engine_version": [
+      1,
+      26,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "a0750005-b8c9-4d0e-1f2a-3b4c5d6e7f8a",
+      "version": [
+        0,
+        9,
+        5
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "a0750001-9f3b-4e6a-b7c5-1d2e3f4a5b6c",
+      "version": [
+        0,
+        7,
+        5
+      ]
+    }
+  ]
+}

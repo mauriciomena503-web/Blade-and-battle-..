@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "bb:battle_sword",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/battle_sword",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "mainhand": "geometry.bb.battle_sword"
+      },
+      "animations": {
+        "hold_fp": "animation.bb.sword.first_person",
+        "hold_tp": "animation.bb.sword.third_person"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "hold_fp": "context.is_first_person == 1.0"
+          },
+          {
+            "hold_tp": "context.is_first_person == 0.0"
+          }
+        ]
+      },
+      "render_controllers": [
+        {
+          "controller.render.bb.weapon": "c.item_slot == 'main_hand'"
+        }
+      ]
+    }
+  }
+}

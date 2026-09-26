@@ -1,0 +1,6 @@
+v0.9.5 aggressive audit
+JSON errors: 0
+First-person geometry contains no head/hat/body cubes; dedicated render controller uses Geometry.first_person.
+Third-person uses Geometry.combat.
+Battle sword restored to texture_meshes architecture with item-slot bone binding, following Bedrock attachable model.
+Sword attachable has context.is_first_person FP/TP animation split.

@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.bb.locomotion": {
+      "initial_state": "normal",
+      "states": {
+        "normal": {
+          "animations": [
+            "bb_idle",
+            {
+              "bb_walk": "query.is_moving && !query.is_sprinting"
+            },
+            {
+              "bb_sprint": "query.is_moving && query.is_sprinting"
+            }
+          ],
+          "transitions": [
+            {
+              "combat": "query.get_equipped_item_name(0, 1) == 'battle_sword'"
+            }
+          ]
+        },
+        "combat": {
+          "animations": [
+            "bb_idle",
+            {
+              "bb_walk": "query.is_moving && !query.is_sprinting && !query.is_using_item"
+            },
+            {
+              "bb_sprint": "query.is_moving && query.is_sprinting && !query.is_using_item"
+            },
+            {
+              "bb_block": "query.is_using_item"
+            }
+          ],
+          "transitions": [
+            {
+              "normal": "query.get_equipped_item_name(0, 1) != 'battle_sword'"
+            }
+          ],
+          "blend_transition": 0.12
+        }
+      }
+    }
+  }
+}

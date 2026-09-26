@@ -1,0 +1,8 @@
+{
+  "resource_pack_name":"blade_battle",
+  "texture_name":"atlas.items",
+  "texture_data":{
+    "battle_sword":{"textures":"textures/items/battle_sword"},
+    "combat_guide":{"textures":"textures/items/combat_guide"}
+  }
+}
